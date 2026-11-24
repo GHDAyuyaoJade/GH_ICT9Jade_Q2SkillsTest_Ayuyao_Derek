@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Skills Test</title>
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="OBMC Logo" height="50px" width="50px" class="rounded-circle">
+            </a>
+            <button class="navbar-toggler" type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html" target="_self">Enrollment</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container mt-3 border border-2 border-primary rounded p-3" style="text-align: center;" id="mainform">
+        <h2>Contact Us</h2>
+        <form>
+            <h4>Student Information</h4>
+            <div class="mb-3 mt-3">
+                <label for="fullname">Full Name</label><br>
+                <input class="form-control" type="text" name="fullname" id="fullname" placeholder="Enter your full name">
+            </div>
+            <div class="mb-3">
+                <label for="birthdate">Birth Date</label>
+                <input type="date" class="form-control" name="birthdate" id="birthdate">
+            </div>
+            <div style="display: flex; gap: 20px;">
+                <div class="mb-3 row-justify-content-center">
+                    <label for="gender">Gender</label><br>
+                    <select name="gender" id="gender">
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="othergender">Prefer not to say</option>
+                    </select>
+                </div>
+                <div class="mb-3">
+                    <label for="gradelvl">Grade Level</label><br>
+                    <select name="gradelvl" id="gradelvl">
+                        <option value="juniorcasa">Junior Casa</option>
+                        <option value="jradvcasa">Junior Advanced Casa</option>
+                        <option value="advcasa">Advanced Casa</option>
+                        <option value="grade1">Grade 1</option>
+                        <option value="grade2">Grade 2</option>
+                        <option value="grade3">Grade 3</option>
+                        <option value="grade4">Grade 4</option>
+                        <option value="grade5">Grade 5</option>
+                        <option value="grade6">Grade 6</option>
+                        <option value="grade7">Grade 7</option>
+                        <option value="grade8">Grade 8</option>
+                        <option value="grade9">Grade 9</option>
+                        <option value="grade10">Grade 10</option>
+                        <option value="grade11">Grade 11</option>
+                        <option value="grade12">Grade 12</option>
+                    </select>
+                </div>
+            </div>
+            <h4>Contact Details</h4>
+            <div class="mb-3">
+                <label for="email">Email Address</label><br>
+                <input class="form-control" type="email" name="email" id="email" placeholder="Enter your email">
+            </div>
+            <div class="mb-3">
+                <label for="contactnum">Contact Number</label><br>
+                <input class="form-control" type="number" name="contactnum" id="contactnum" placeholder="Enter phone number">
+            </div>
+            <h4>Other Information</h4>
+            <div style="display: flex; gap: 20px;">
+                <div class="mb-3 row-justify-content-center">
+                    <label for="learningmode">Mode of Learning</label><br>
+                    <select name="learningmode" id="learningmode">
+                        <option value="onlineclass">Online</option>
+                        <option value="f2fclass">Face-to-Face</option>
+                    </select>
+                </div><br>
+                <div id="agreetoform">
+                    <input type="checkbox" name="formagree" id="formagree" value="yes">
+                    <label for="formagree">I confirm that the information provided is true and complete.</label>
+                </div>
+            </div>
+            <div class="mb-3">
+                <button type="submit" class="btn btn-primary form-control">Submit</button>
+            </div>
+        </form>
+    </div>
+    <footer class="bg-dark py-5" data-bs-theme="dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-4">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRhGWMliic2yX4A8KaM5AP99wxYDDubpMTUsDhyHWKdYmoUUNZZYomypEc&s=10" alt="OBMC Logo" height="150px" width="150px" class="rounded-circle">
+                </div>
+                <div class="col-sm-4 text-white">
+                    <h3>Location</h3>
+                    <ul>
+                        <li>Angeles City, Pampanga</li>
+                        <li>Fairview, Quezon City</li>
+                        <li>Greenhills, San Juan City</li>
+                        <li>B.F. Homes, Las Piñas City</li>
+                        <li>Sta. Ana, Manila City</li>
+                    </ul>
+                </div>
+                <div class="col-sm-4 text-white">
+                    <h3>Contact Us</h3>
+                    <ul>
+                        <li>+63 2 8722 9720 to 26</li>
+                        <li>info@obmontessori.edu.ph</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
